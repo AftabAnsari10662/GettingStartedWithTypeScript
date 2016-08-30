@@ -3,7 +3,7 @@ export class Greeter {
     person:string;
     constructor(message: string) {
         this.greeting = message;
-        this.person = "Aftab Ansari";
+        this.person = "Having Fun with Typescript!";
     }
     greet() {
         return "Hello, " + this.greeting;
