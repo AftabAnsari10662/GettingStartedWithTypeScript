@@ -1,6 +1,6 @@
 import {Greeter} from "./Greeter";
 
-class App {
+export class App {
 
 
     sayHello() {
