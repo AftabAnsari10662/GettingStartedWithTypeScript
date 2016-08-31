@@ -8,7 +8,7 @@ export class App {
         let name = "Aftab Ansari";
         let greeter = new Greeter(name);
         let emp = new Employee(name);
-        let user = new User("Ansari", "Ansari@Gmail.com", "motuansari@gmail.com");
+        let user = new User("Ansari", "motuansari@gmail.com");
         console.info(user.getName());
         console.info(user.getPrimaryEmail());
         console.warn(user.getSecondaryEmail());

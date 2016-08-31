@@ -2,6 +2,7 @@ define(["require", "exports"], function (require, exports) {
     "use strict";
     var User = (function () {
         function User(name, primaryEmail, secondaryEmail) {
+            if (primaryEmail === void 0) { primaryEmail = "default@default.com"; }
             this.name = "Aftab";
             this.primaryEmail = "aftab.ansari@Honeywell.com";
             this.secondaryEmail = "none";

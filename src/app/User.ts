@@ -1,9 +1,9 @@
 export class User {
 
-    name: string = "Aftab";
-    primaryEmail: string = "aftab.ansari@Honeywell.com";
-    secondaryEmail:string = "none";
-    constructor(name: string, primaryEmail: string, secondaryEmail?:string) {
+    private name: string = "Aftab";
+    private primaryEmail: string = "aftab.ansari@Honeywell.com";
+    private secondaryEmail:string = "none";
+    constructor(name: string, primaryEmail: string = "default@default.com", secondaryEmail?:string) {
 
         this.name = name;
         this.primaryEmail = primaryEmail;
