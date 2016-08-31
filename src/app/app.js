@@ -1,4 +1,4 @@
-define(["require", "exports", "./Greeter", "./Employee"], function (require, exports, Greeter_1, Employee_1) {
+define(["require", "exports", "./Greeter", "./Employee", "./User"], function (require, exports, Greeter_1, Employee_1, User_1) {
     "use strict";
     var App = (function () {
         function App() {
@@ -7,6 +7,9 @@ define(["require", "exports", "./Greeter", "./Employee"], function (require, exp
             var name = "Aftab Ansari";
             var greeter = new Greeter_1.Greeter(name);
             var emp = new Employee_1.Employee(name);
+            var user = new User_1.User("Ansari", "Ansari@Gmail.com");
+            console.info(user.getName());
+            console.info(user.getEmail());
             emp.doWork();
             console.log(greeter.greet());
         };
