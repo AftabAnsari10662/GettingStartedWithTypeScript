@@ -7,9 +7,10 @@ define(["require", "exports", "./Greeter", "./Employee", "./User"], function (re
             var name = "Aftab Ansari";
             var greeter = new Greeter_1.Greeter(name);
             var emp = new Employee_1.Employee(name);
-            var user = new User_1.User("Ansari", "Ansari@Gmail.com");
+            var user = new User_1.User("Ansari", "Ansari@Gmail.com", "motuansari@gmail.com");
             console.info(user.getName());
-            console.info(user.getEmail());
+            console.info(user.getPrimaryEmail());
+            console.warn(user.getSecondaryEmail());
             emp.doWork();
             console.log(greeter.greet());
         };

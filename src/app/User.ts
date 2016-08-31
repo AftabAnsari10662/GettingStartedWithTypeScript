@@ -1,19 +1,25 @@
 export class User {
 
     name: string = "Aftab";
-    email: string = "aftab.ansari@Honeywell.com";
-    constructor(name: string, email: string) {
+    primaryEmail: string = "aftab.ansari@Honeywell.com";
+    secondaryEmail:string = "none";
+    constructor(name: string, primaryEmail: string, secondaryEmail?:string) {
 
         this.name = name;
-        this.email = email;
+        this.primaryEmail = primaryEmail;
+        this.secondaryEmail = secondaryEmail;
     }
 
     getName(): string {
-        return this.name;
+        return `Name : ${this.name}`;
     }
 
-    getEmail(): string {
+    getPrimaryEmail(): string {
 
-        return this.email;
+        return `Primary Email : ${this.primaryEmail}`;
+    }
+
+    getSecondaryEmail():string{
+        return `Secondary Email : ${this.secondaryEmail}`
     }
 }
