@@ -1,0 +1,13 @@
+{
+  "name": "learningtypescript",
+  "description": "",
+  "main": "Greeter.js",
+  "authors": [
+    "aftab ansari"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "requirejs": "^2.2.0"
+  }
+}
