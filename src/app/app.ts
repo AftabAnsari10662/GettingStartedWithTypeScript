@@ -12,6 +12,8 @@ export class App {
         let user = new User("Ansari", "motuansari@gmail.com");
         let names:Array<string> = ["Aftab", "Anshul", "Rohit"];
         let department = new Department(names);
+        console.log(`Department Name : ${department.departmentName}`);
+        //console.log(`Department Id : ${department.departmentId}`)
         department.doWork();
         console.info(user.getName());
         console.info(user.getPrimaryEmail());

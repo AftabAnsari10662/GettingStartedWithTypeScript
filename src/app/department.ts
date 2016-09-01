@@ -2,6 +2,8 @@
 import { Employee } from "./Employee";
 export class Department {
 
+    public departmentName: string = "Engineering";
+    private departmentId: Number;
     employees: Employee[];
     constructor(names: string[]) {
         console.log(names);

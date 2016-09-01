@@ -10,6 +10,8 @@ define(["require", "exports", "./Greeter", "./Employee", "./User", "./Department
             var user = new User_1.User("Ansari", "motuansari@gmail.com");
             var names = ["Aftab", "Anshul", "Rohit"];
             var department = new Department_1.Department(names);
+            console.log("Department Name : " + department.departmentName);
+            //console.log(`Department Id : ${department.departmentId}`)
             department.doWork();
             console.info(user.getName());
             console.info(user.getPrimaryEmail());
