@@ -19,6 +19,6 @@ export class Employee{
 	}
 
 	doWork(){
-		console.log(`${this.name} is working`);
+		console.log(`${this.name} is working!`);
 	}
 }

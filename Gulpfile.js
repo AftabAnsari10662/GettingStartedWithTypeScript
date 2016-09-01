@@ -1,3 +1,4 @@
+
 var gulp = require('gulp'),
     debug = require('gulp-debug'),
     inject = require('gulp-inject'),
@@ -11,7 +12,15 @@ var gulp = require('gulp'),
     superstatic = require('superstatic');
 
 var config = new Config();
-console.log("aftab"+config);
+console.log("aftab" + config);
+
+gulp.task('toJs', function () {
+    return gulp.src('./src/app/**/*.ts')
+        .pipe(tsc(tsProject))
+        .pipe(gulp.dest('./src/dist'))
+});
+
+
 /**
 * Lint all custom TypeScript files.
 */
@@ -54,7 +63,7 @@ gulp.task('clean-ts', function (cb) {
 });
 
 gulp.task('watch', function () {
-    gulp.watch([config.allTypeScript], ['compile-ts']);
+    gulp.watch([config.allTypeScript], ['toJs']);
 });
 
 gulp.task('serve', ['compile-ts', 'watch'], function () {
