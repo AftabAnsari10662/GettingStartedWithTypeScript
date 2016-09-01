@@ -1,6 +1,6 @@
 var configOptions = {
 
-    baseUrl: 'src/app/'
+    baseUrl: 'src/dist/'
 
 };
 

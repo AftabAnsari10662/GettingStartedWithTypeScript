@@ -10,7 +10,7 @@ export class App {
         let greeter = new Greeter(name);
         let emp = new Employee(name, "aftabansari10662@gmail.com");
         let user = new User("Ansari", "motuansari@gmail.com");
-        let names: Array<string> = ["Aftab", "Anshul", "Rohit"];
+        let names: Array<string> = ["Aftab", "Anshul Rana", "Rohit K"];
         let department = new Department(names);
         department.doWork();
         console.info(user.getName());
