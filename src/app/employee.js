@@ -1,8 +1,9 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
     var Employee = (function () {
-        function Employee(name) {
+        function Employee(name, email) {
             this._name = name;
+            this._email = email;
         }
         Object.defineProperty(Employee.prototype, "name", {
             get: function () {
@@ -11,9 +12,15 @@ define(["require", "exports"], function (require, exports) {
             enumerable: true,
             configurable: true
         });
+        Object.defineProperty(Employee.prototype, "email", {
+            get: function () {
+                return this._email;
+            },
+            enumerable: true,
+            configurable: true
+        });
         Employee.prototype.doWork = function () {
-            var str = this._name + " is working";
-            console.info(str);
+            console.log(this.name + " is working");
         };
         return Employee;
     }());

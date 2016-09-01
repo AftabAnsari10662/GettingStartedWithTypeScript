@@ -1,18 +1,24 @@
-export class Employee {
+export class Employee{
 
-	private _name: string;
+	private _name:string;
+	private _email:string;
 
-	constructor(name: string) {
-
+	constructor(name:string, email:string){
 		this._name = name;
-
+		this._email= email;
 	}
-    get name() {
+
+	get name(){
 
 		return this._name;
 	}
-	doWork() {
-		let str = `${this._name} is working`;
-		console.info(str);
+
+	get email(){
+
+		return this._email;
+	}
+
+	doWork(){
+		console.log(`${this.name} is working`);
 	}
 }

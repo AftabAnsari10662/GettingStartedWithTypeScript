@@ -9,12 +9,12 @@ define(["require", "exports"], function (require, exports) {
             return "Hello, " + this.greeting;
         };
         Greeter.prototype.sayHello = function () {
-            return "Helloo!!!, " + this.greeting;
+            return "Helloo!, " + this.greeting;
         };
         Greeter.prototype.sayGoodBye = function () {
-            return "Good Bye!" + this.greeting;
+            return "Good Bye!!" + this.greeting;
         };
         return Greeter;
-    } ());
+    }());
     exports.Greeter = Greeter;
 });

@@ -1,23 +1,16 @@
-
 import { Employee } from "./Employee";
 export class Department {
 
-    private departmentName: string = "Engineering";
-    private departmentId: Number;
-    employees: Employee[];
-    constructor(names: string[]) {
-        console.log(names);
-        this.departmentId = 100;
-        this.employees = names.map(name => new Employee(name));
+    _employees: Array<Employee>;
+    constructor(names: Array<string>) {
+
+        this._employees = names.map(name => new Employee(name,"aftabansari10662@gmail.com"));
     }
 
-    get department() {
-        return this.departmentName;
-    }
     doWork(): void {
-        this.employees.forEach(emp => {
-            console.log(emp.name);
+
+        this._employees.forEach(employee => {
+            console.log(`${employee.name} is working`)
         });
     }
-
 }
