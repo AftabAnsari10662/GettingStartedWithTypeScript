@@ -1,6 +1,7 @@
 import {Greeter} from "./Greeter";
 import {Employee} from "./Employee";
 import { User } from "./User";
+import { Department} from "./Department";
 export class App {
 
 
@@ -9,6 +10,9 @@ export class App {
         let greeter = new Greeter(name);
         let emp = new Employee(name);
         let user = new User("Ansari", "motuansari@gmail.com");
+        let names:Array<string> = ["Aftab", "Anshul", "Rohit"];
+        let department = new Department(names);
+        department.doWork();
         console.info(user.getName());
         console.info(user.getPrimaryEmail());
         console.warn(user.getSecondaryEmail());
