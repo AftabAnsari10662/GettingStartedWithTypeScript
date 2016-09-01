@@ -4,6 +4,7 @@ export class Greeter {
     private greeting: string;
 
     private person: string;
+
     constructor(message: string) {
         this.greeting = message;
         this.person = "Having Fun with Typescript!";
@@ -12,14 +13,14 @@ export class Greeter {
         return "Hello, " + this.greeting;
     }
 
+    sayHello(): string {
 
-    sayHello() {
-
-        return `Helloo!!, ${this.greeting} `;
+        return `Helloo!, ${this.greeting}`;
     }
-    sayGoodBye() {
 
-        return "Good Bye!" + this.greeting;
+    sayGoodBye(): string {
+
+        return "Good Bye!!" + this.greeting;
     }
 
 }

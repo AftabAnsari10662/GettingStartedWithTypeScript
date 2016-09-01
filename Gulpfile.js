@@ -54,7 +54,7 @@ gulp.task('clean-ts', function (cb) {
 });
 
 gulp.task('watch', function () {
-    gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts']);
+    gulp.watch([config.allTypeScript], ['compile-ts']);
 });
 
 gulp.task('serve', ['compile-ts', 'watch'], function () {
