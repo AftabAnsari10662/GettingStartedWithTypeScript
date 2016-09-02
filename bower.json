@@ -8,6 +8,8 @@
   "license": "ISC",
   "homepage": "",
   "dependencies": {
-    "requirejs": "^2.2.0"
+    "requirejs": "^2.2.0",
+    "jQuery": "^3.1.0",
+    "bootstrap": "^3.3.7"
   }
 }
