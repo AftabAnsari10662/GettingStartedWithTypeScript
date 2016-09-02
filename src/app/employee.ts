@@ -1,24 +1,34 @@
-export class Employee{
+interface IEmployee {
 
-	private _name:string;
-	private _email:string;
+	doWork(): void;
+	fillTimesheet(): void;
+}
 
-	constructor(name:string, email:string){
+export class Employee implements IEmployee {
+
+	private _name: string;
+	private _email: string;
+
+	constructor(name: string, email: string) {
 		this._name = name;
-		this._email= email;
+		this._email = email;
 	}
 
-	get name(){
+	get name() {
 
 		return this._name;
 	}
 
-	get email(){
+	get email() {
 
 		return this._email;
 	}
 
-	doWork(){
+	doWork() {
 		console.log(`${this.name} is working from office.`);
+	}
+
+	fillTimesheet():void{
+		console.log(`${this.name} has filled the timesheet`);
 	}
 }

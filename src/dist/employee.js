@@ -22,6 +22,9 @@ define(["require", "exports"], function (require, exports) {
         Employee.prototype.doWork = function () {
             console.log(this.name + " is working from office.");
         };
+        Employee.prototype.fillTimesheet = function () {
+            console.log(this.name + " has filled the timesheet");
+        };
         return Employee;
     }());
     exports.Employee = Employee;
