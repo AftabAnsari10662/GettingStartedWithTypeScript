@@ -8,26 +8,30 @@ export class App {
 
 
     sayHello() {
+
         let name = "Aftab Ansari";
         let greeter = new Greeter(name);
         let emp = new Employee(name, "aftabansari10662@gmail.com");
         let user = new User("Ansari", "motuansari@gmail.com");
         let names: Array<string> = ["Aftab",
             "Anshul Rana",
-            "Rohit K",
-            "Chaithra M",
-            "Sampath Kaarthic",
+            "Rohit Kumar",
+            "Chaithra Mandanna",
+            "Sampath Karthic",
             "Sunil Parisi",
             "Girish c",
             "Nanda Kishor",
             "Shubhayu Roy",
-            "Balachadra Reddy",
+            "Balachandra Reddy",
             "Durgesh Shukla",
             "Gaurish Shukla",
             "Supraja",
             "Gazala",
             "Malathy Rajkumar",
-            "Sameer"];
+            "Sameer",
+            "Sneha Harsh",
+            "Wahid Abdul"];
+        names.sort((name1, name2) => { return name1 > name2 ? 1 : -1 });
         let department = new Department(names);
         // $("#clickMe").click( department.doWork());
 

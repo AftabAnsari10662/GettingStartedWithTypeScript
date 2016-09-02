@@ -20,7 +20,7 @@ define(["require", "exports"], function (require, exports) {
             configurable: true
         });
         Employee.prototype.doWork = function () {
-            console.log(this.name + " is working!");
+            console.log(this.name + " is working from office.");
         };
         return Employee;
     }());

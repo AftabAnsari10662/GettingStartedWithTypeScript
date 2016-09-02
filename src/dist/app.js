@@ -10,20 +10,23 @@ define(["require", "exports", "./Greeter", "./Employee", "./User", "./department
             var user = new User_1.User("Ansari", "motuansari@gmail.com");
             var names = ["Aftab",
                 "Anshul Rana",
-                "Rohit K",
-                "Chaithra M",
-                "Sampath Kaarthic",
+                "Rohit Kumar",
+                "Chaithra Mandanna",
+                "Sampath Karthic",
                 "Sunil Parisi",
                 "Girish c",
                 "Nanda Kishor",
                 "Shubhayu Roy",
-                "Balachadra Reddy",
+                "Balachandra Reddy",
                 "Durgesh Shukla",
                 "Gaurish Shukla",
                 "Supraja",
                 "Gazala",
                 "Malathy Rajkumar",
-                "Sameer"];
+                "Sameer",
+                "Sneha Harsh",
+                "Wahid Abdul"];
+            names.sort(function (name1, name2) { return name1 > name2 ? 1 : -1; });
             var department = new department_1.Department(names);
             // $("#clickMe").click( department.doWork());
             // console.info(user.getName());

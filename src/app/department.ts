@@ -12,7 +12,7 @@ export class Department {
     doWork(): void {
 
         this._employees.forEach(employee => {
-            console.log(`${employee.name} is working!!!`)
+            employee.doWork();
         });
     }
 }

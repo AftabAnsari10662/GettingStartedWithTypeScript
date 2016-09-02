@@ -8,7 +8,7 @@ define(["require", "exports", "./Employee"], function (require, exports, Employe
         }
         Department.prototype.doWork = function () {
             this._employees.forEach(function (employee) {
-                console.log(employee.name + " is working!!!");
+                employee.doWork();
             });
         };
         return Department;
