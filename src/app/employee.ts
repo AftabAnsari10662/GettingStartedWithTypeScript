@@ -1,20 +1,5 @@
-class Person {
-
-	private _title: string;
-	constructor(title: string) {
-		this._title = title;
-	}
-
-	get title() {
-		return this._title;
-	}
-}
-
-interface IEmployee {
-
-	doWork(): void;
-	fillTimesheet(): void;
-}
+import { Person } from "./Person";
+import { IEmployee } from "./IEmployee";
 
 export class Employee extends Person implements IEmployee {
 
@@ -27,11 +12,15 @@ export class Employee extends Person implements IEmployee {
 		this._email = email;
 	}
 
+	set name(name) {
+		this._name = name;
+	}
 	get name() {
-
 		return this._name;
 	}
-
+	set email(email) {
+		this._email = email;
+	}
 	get email() {
 
 		return this._email;

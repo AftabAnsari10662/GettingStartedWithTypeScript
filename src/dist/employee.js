@@ -3,21 +3,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", "./Person"], function (require, exports, Person_1) {
     "use strict";
-    var Person = (function () {
-        function Person(title) {
-            this._title = title;
-        }
-        Object.defineProperty(Person.prototype, "title", {
-            get: function () {
-                return this._title;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        return Person;
-    }());
     var Employee = (function (_super) {
         __extends(Employee, _super);
         function Employee(name, title, email) {
@@ -47,6 +34,6 @@ define(["require", "exports"], function (require, exports) {
             console.log(this.name.toUpperCase() + " has filled the timesheet");
         };
         return Employee;
-    }(Person));
+    }(Person_1.Person));
     exports.Employee = Employee;
 });

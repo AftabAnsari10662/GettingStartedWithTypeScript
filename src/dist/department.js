@@ -5,9 +5,7 @@ define(["require", "exports", "./Employee"], function (require, exports, Employe
             this._employees = names.map(function (name) { return new Employee_1.Employee(name, "", ""); });
         }
         Department.prototype.doWork = function () {
-            this._employees.forEach(function (emp) {
-                emp.doWork();
-            });
+            this._employees.forEach(function (emp) { return emp.doWork(); });
         };
         return Department;
     }());
