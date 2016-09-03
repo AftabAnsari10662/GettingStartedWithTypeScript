@@ -1,18 +1,14 @@
-import { Employee } from "./Employee";
+import {Employee } from "./Employee";
+
 export class Department {
 
-    _employees: Array<Employee>;
-    constructor(names: Array<string>) {
+    private _employees: Array<Employee>;
+    constructor(names) {
+        this._employees = names.map(name => new Employee(name, "", ""))
 
-        this._employees = names.map(name =>
-            new Employee(name, "title",
-                "aftabansari@gmail.com"));
     }
 
     doWork(): void {
-
-        this._employees.forEach(employee => {
-            employee.doWork();
-        });
+        this._employees.forEach(emp => emp.doWork());
     }
 }
