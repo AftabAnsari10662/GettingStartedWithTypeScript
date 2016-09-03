@@ -1,15 +1,28 @@
+class Person {
+
+	private _title: string;
+	constructor(title: string) {
+		this._title = title;
+	}
+
+	get title() {
+		return this._title;
+	}
+}
+
 interface IEmployee {
 
 	doWork(): void;
 	fillTimesheet(): void;
 }
 
-export class Employee implements IEmployee {
+export class Employee extends Person implements IEmployee {
 
 	private _name: string;
 	private _email: string;
 
-	constructor(name: string, email: string) {
+	constructor(name: string, title: string, email: string) {
+		super(title);
 		this._name = name;
 		this._email = email;
 	}
@@ -25,10 +38,11 @@ export class Employee implements IEmployee {
 	}
 
 	doWork() {
-		console.log(`${this.name} is working from office.`);
+		let str = `${this.name}  ${this.title} is working from office.`
+		console.log(str.toUpperCase());
 	}
 
-	fillTimesheet():void{
-		console.log(`${this.name} has filled the timesheet`);
+	fillTimesheet(): void {
+		console.log(`${this.name.toUpperCase()} has filled the timesheet`);
 	}
 }

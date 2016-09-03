@@ -5,8 +5,8 @@ export class Department {
     constructor(names: Array<string>) {
 
         this._employees = names.map(name =>
-         new Employee(name,
-          "aftabansari@gmail.com"));
+            new Employee(name, "title",
+                "aftabansari@gmail.com"));
     }
 
     doWork(): void {

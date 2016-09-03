@@ -11,7 +11,7 @@ export class App {
 
         let name = "Aftab Ansari";
         let greeter = new Greeter(name);
-        let emp = new Employee(name, "aftabansari10662@gmail.com");
+        let emp = new Employee(name, "Title", "aftabansari10662@gmail.com");
         let user = new User("Ansari", "motuansari@gmail.com");
         let names: Array<string> = ["Aftab",
             "Anshul Rana",

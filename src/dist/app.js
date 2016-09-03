@@ -6,7 +6,7 @@ define(["require", "exports", "./Greeter", "./Employee", "./User", "./department
         App.prototype.sayHello = function () {
             var name = "Aftab Ansari";
             var greeter = new Greeter_1.Greeter(name);
-            var emp = new Employee_1.Employee(name, "aftabansari10662@gmail.com");
+            var emp = new Employee_1.Employee(name, "Title", "aftabansari10662@gmail.com");
             var user = new User_1.User("Ansari", "motuansari@gmail.com");
             var names = ["Aftab",
                 "Anshul Rana",
