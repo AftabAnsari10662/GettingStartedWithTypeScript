@@ -27,11 +27,13 @@ export class Employee extends Person implements IEmployee {
 	}
 
 	doWork() {
-		let str = `${this.name}  ${this.title} is working from office.`
+		let str = `${this.name}
+		  ${this.title} is working from office.`
 		console.log(str.toUpperCase());
 	}
 
 	fillTimesheet(): void {
-		console.log(`${this.name.toUpperCase()} has filled the timesheet`);
+		console.log(`${this.name.toUpperCase()}
+		 has filled the timesheet`);
 	}
 }
